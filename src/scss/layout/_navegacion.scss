@@ -1,0 +1,83 @@
+.derecha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet{
+        align-items: flex-end;
+    }
+}
+.dark-mode-boton{
+    width: 3rem;
+    filter: invert(100%);
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    @include tablet{
+        margin-top: 0rem;
+    }
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    align-items: center;
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+}
+.mobile-menu{
+    img{
+        width: 5rem;
+    }
+    cursor: pointer;
+    @include tablet{
+        display: none;
+    }
+}
+/* .navegacion.hd{
+    display: none;
+    @include tablet{
+        display: flex;
+    }
+} */
+.navegacion{
+    display: none;
+
+    @include tablet{
+        display: flex;
+        align-items: center;
+    }
+    //text-align: center;
+    a{
+        color: $blanco;
+        text-decoration: none;
+        font-size: 1.8rem;
+        display: block;
+        text-align: center;
+        /* width: 15rem;
+        border-radius: 1rem; */
+
+        /* &:hover{
+            background-color: $grisOscuro;
+        } */
+
+        @include tablet{
+            margin-right: 2rem;
+            width: auto;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.mostrar{
+    display: block;
+    @include tablet{
+        display: flex;
+    }
+}
