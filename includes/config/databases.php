@@ -18,7 +18,7 @@ function conectarDB() : mysqli {
         return $db;
         //en realidad solo basta con poner in if positivo y q retorne true en caso de exito, y si falla ya se sabe que se va al catch
     } catch (\Exception $e) {
-        echo "error en la conexion de DB";
+        echo "error en la conexion de DB : " . $e;
         //die;
         //exit;
     }
