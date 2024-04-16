@@ -12,7 +12,7 @@
     
     <label for="imagen">Imagen:</label>
     <input type="file" id="imagen" name="imagen" accept="image/jpeg, image/png">
-    <?php if($_SERVER['PATH_INFO'] === '/entradas_blog/actualizar'){ ?>
+    <?php if(strpos($_SERVER['REQUEST_URI'], '/entradas_blog/actualizar') !== false){ ?>
     <?php if($entrada->imagen){ ?>
         <img src="<?php echo '/images_blog/' . $entrada->imagen; ?>" alt="imagen-small" class="imagen-propiedad">
     <?php } ?>
