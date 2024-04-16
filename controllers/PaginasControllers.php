@@ -78,7 +78,7 @@ class PaginasControllers{
                 //SMTP username
                 $mail->Password   = $_ENV['EMAIL_PASS'];
                 //SMTP password
-                $mail->SMTPSecure = 'ssl'; 
+                $mail->SMTPSecure = 'tls'; 
                 $mail->Port = $_ENV['EMAIL_PORT'];
             
                 //Recipients
