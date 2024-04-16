@@ -11,7 +11,7 @@
         <input type="file" id="imagen" name="propiedad[imagen]" accept="image/jpeg, image/png" >
         <?php if($_SERVER['PATH_INFO'] === '/propiedades/actualizar') { ?>
         <?php if($propiedad->imagen){ ?>
-            <img src="<?php echo '../../imagenF/' . $propiedad->imagen; ?>" alt="imagen-small" class="imagen-propiedad">
+            <img src="<?php echo '/imagenF/' . $propiedad->imagen; ?>" alt="imagen-small" class="imagen-propiedad">
         <?php } ?>
         <?php } ?>
 
