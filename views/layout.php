@@ -30,7 +30,7 @@ if(!isset($inicio)){
                 </a>
 
                 <div class="mobile-menu">
-                    <img src="./build/img/barras.svg" alt="menu burger responsive">
+                    <img src="/build/img/barras.svg" alt="menu burger responsive">
                 </div>
 
                 <div class="derecha">
@@ -42,9 +42,9 @@ if(!isset($inicio)){
                         <a href="/blog">Blog</a>
                         <a href="/contacto">Contacto</a>
                         <?php if($auth){ ?>
-                            <a href="./logout">Cerrar Sesion</a>
+                            <a href="/logout">Cerrar Sesion</a>
                         <?php }else{ ?>
-                            <a href="./login">Login</a>
+                            <a href="/login">Login</a>
                         <?php } ?>
                     </nav>
                 </div>
